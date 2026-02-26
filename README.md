@@ -1,46 +1,21 @@
-# Astro Starter Kit: Basics
+# Agenda Cultural Comuna 4 - Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+Plataforma oficial desarrollada en **Astro** y **Tailwind CSS** para gestionar y visualizar la biblioteca de perfiles culturales, la línea temporal histórica y el componente de la Memoria Itinerante de la Comuna 4 - Aranjuez.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## ⚠️ Instrucciones Críticas para Agentes IA
+Si eres un agente IA colaborando en este u otro chat:
+**DEBES LEER el archivo `AGENT_INSTRUCTIONS.md` en la raíz de este proyecto ANTES de escribir código, modificar layouts o agregar galerías.** Este archivo contiene los secretos arquitectónicos y de estilo del proyecto. No inventes componentes, utiliza la librería `fslightbox` estandarizada tal como se detalla en dicha guía.
 
-## 🚀 Project Structure
+## Comandos Principales (NPM)
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala dependencias necesarias                  |
+| `npm run dev`             | Inicia el servidor de desarrollo (`localhost:4321`) |
+| `npm run build`           | Compila el sitio para producción en `./dist/`    |
 
-## 👀 Want to learn more?
+## Estructura de Contenido
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `/src/content/profiles:` Ficheros Markdown que se muestran en "Base de Datos C4".
+- `/src/content/timeline:` Era de la línea de tiempo.
+- `/public/wp-content/`: Archivos multimedia estáticos preservados.
