@@ -1,0 +1,19 @@
+---
+date: 2025-03-26
+---
+
+{"name":"hop-content","children":\[{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections","attrs":{"id":"reusable-sections"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1013-c4","parentId":"1013-c3","partialId":1013,"children":\[{"name":"hop-heading","slot":null,"parentId":"1013-c4","index":0,"id":"1013-c5","partialId":1013,"styleRef":489,"type":"content","domuuid":"850-c5","props":{"content":"La Puerta Rosa"}},{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1013-c7","parentId":"1013-c6","partialId":1013,"children":\[{"name":"hop-image","slot":null,"parentId":"1013-c7","index":0,"id":"1013-c8","partialId":1013,"styleRef":492,"type":"content","domuuid":"850-c8","props":{"url":"http:\\/\\/agendaculturalc4.com\\/wp-content\\/uploads\\/2025\\/03\\/Puerta-Rosa-LOGO-3-Borrando-Estigmas.png","caption":{"text":""},"imageId":759,"size":""}}\],"styleRef":491,"type":"content"},{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1013-c9","parentId":"1013-c6","partialId":1013,"children":\[{"name":"hop-heading","slot":null,"parentId":"1013-c9","index":0,"id":"1013-c10","partialId":1013,"styleRef":494,"type":"content","domuuid":"850-c17","props":{"content":"Representante: Julio Adolfo Mayo Berm\\u00fadez  
+  
+Actividades: Memoria y Patrimonio, Artesanal, Ilustracion, Mujeres, Literatura, Poes\\u00eda, Laboratorios culturales y culinarios  
+  
+Contacto: 3168816468  
+  
+Email: lapuertarosamedellin@gmail.com  
+  
+Direcci\\u00f3n: carrera 51 #89-12 Aranjuez San Cayetano  
+  
+WhatsApp 3168816468  
+  
+Instagram: https:\\/\\/www.instagram.com\\/lapuertarosamedellin\\/"}}\],"styleRef":493,"type":"content","domuuid":"850-c14"}\],"slot":null,"parentId":"1013-c4","index":1,"id":"1013-c6","partialId":1013,"styleRef":490,"type":"content","domuuid":"504-c9"}\],"styleRef":488,"type":"content","domuuid":"504-c4"}\],"id":"1013-c3","parentId":"1013-c2","partialId":1013,"styleRef":487,"type":"content","domuuid":"504-c3"}\],"id":"1013-c2","parentId":"1013-c1","partialId":1013,"slots":{"header":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":80,"unit":"%"}}}}},"children":\[{"name":"hop-heading","id":"1013-c13","parentId":"1013-c12","partialId":1013,"styleRef":497,"type":"content"},{"name":"hop-text","id":"1013-c14","parentId":"1013-c12","partialId":1013,"styleRef":498,"type":"content"}\],"id":"1013-c12","parentId":"1013-c11","partialId":1013,"styleRef":496,"type":"content"}\],"id":"1013-c11","parentId":"1013-c2","partialId":1013,"styleRef":495,"type":"content"}\]},"styleRef":486,"type":"content","domuuid":"850-c2"},{"name":"hop-section","props":{"anchor":false,"name":"Custom","attrs":{"id":"custom"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1013-c17","parentId":"1013-c16","partialId":1013,"children":\[{"name":"hop-text","slot":null,"parentId":"1013-c17","index":0,"id":"1013-c18","partialId":1013,"styleRef":502,"type":"content","props":{"content":"
+
+\[ngg src=\\"galleries\\" ids=\\"12\\" display=\\"basic\_thumbnail\\" thumbnail\_crop=\\"0\\"\]<\\/p>"}}\],"styleRef":501,"type":"content"}\],"id":"1013-c16","parentId":"1013-c15","partialId":1013,"styleRef":500,"type":"content"}\],"id":"1013-c15","parentId":"1013-c1","partialId":1013,"styleRef":499,"type":"content"}\],"id":"1013-c1","partialId":1013,"styleRef":485,"type":"content"}

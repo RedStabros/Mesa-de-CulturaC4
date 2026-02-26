@@ -1,0 +1,18 @@
+---
+date: 2025-03-27
+---
+
+{"name":"hop-content","children":\[{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections","attrs":{"id":"reusable-sections"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1120-c4","parentId":"1120-c3","partialId":1120,"children":\[{"name":"hop-heading","slot":null,"parentId":"1120-c4","index":0,"id":"1120-c5","partialId":1120,"styleRef":615,"type":"content","domuuid":"850-c5","props":{"content":"Jacinta la voz rom\\u00e1ntica de la canci\\u00f3n"}},{"name":"hop-row","slot":null,"parentId":"1120-c4","index":1,"id":"1120-c6","partialId":1120,"children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1120-c7","parentId":"1120-c6","partialId":1120,"children":\[{"name":"hop-image","slot":null,"parentId":"1120-c7","index":0,"id":"1120-c8","partialId":1120,"styleRef":618,"type":"content","domuuid":"850-c8","props":{"url":"http:\\/\\/agendaculturalc4.com\\/wp-content\\/uploads\\/2025\\/03\\/jacinta.png","caption":{"text":""},"imageId":835,"size":""}}\],"styleRef":617,"type":"content"},{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1120-c9","parentId":"1120-c6","partialId":1120,"children":\[{"name":"hop-heading","slot":null,"parentId":"1120-c9","index":0,"id":"1120-c10","partialId":1120,"styleRef":620,"type":"content","domuuid":"850-c17","props":{"content":"Representante: Jacinta Elena Duque  
+  
+Actividades: Mujeres, M\\u00fasica, canto  
+  
+Contacto: 3052942606  
+  
+Email: jacinta54lavoz@gmail.com  
+  
+Direcci\\u00f3n: Cra 51a #94-80  
+  
+Facebook: https:\\/\\/www.facebook.com\\/helena.duque.754?mibextid=ZbWKwL  
+"}}\],"styleRef":619,"type":"content","domuuid":"850-c14"}\],"styleRef":616,"type":"content","domuuid":"504-c9"}\],"styleRef":614,"type":"content","domuuid":"504-c4"}\],"id":"1120-c3","parentId":"1120-c2","partialId":1120,"styleRef":613,"type":"content","domuuid":"504-c3"}\],"id":"1120-c2","parentId":"1120-c1","partialId":1120,"slots":{"header":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":80,"unit":"%"}}}}},"children":\[{"name":"hop-heading","id":"1120-c13","parentId":"1120-c12","partialId":1120,"styleRef":623,"type":"content"},{"name":"hop-text","id":"1120-c14","parentId":"1120-c12","partialId":1120,"styleRef":624,"type":"content"}\],"id":"1120-c12","parentId":"1120-c11","partialId":1120,"styleRef":622,"type":"content"}\],"id":"1120-c11","parentId":"1120-c2","partialId":1120,"styleRef":621,"type":"content"}\]},"styleRef":612,"type":"content","domuuid":"850-c2"},{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections 2","attrs":{"id":"reusable-sections-2"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1120-c17","parentId":"1120-c16","partialId":1120,"children":\[{"name":"hop-text","slot":null,"parentId":"1120-c17","index":0,"id":"1120-c18","partialId":1120,"styleRef":628,"type":"content","domuuid":"1013-c18","props":{"content":"
+
+\[ngg src=\\"galleries\\" ids=\\"19\\" display=\\"basic\_thumbnail\\" thumbnail\_crop=\\"0\\"\]<\\/p>"}}\],"styleRef":627,"type":"content"}\],"id":"1120-c16","parentId":"1120-c15","partialId":1120,"styleRef":626,"type":"content"}\],"id":"1120-c15","parentId":"1120-c1","partialId":1120,"styleRef":625,"type":"content"}\],"id":"1120-c1","partialId":1120,"styleRef":611,"type":"content"}

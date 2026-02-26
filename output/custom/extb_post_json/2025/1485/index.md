@@ -1,0 +1,19 @@
+---
+date: 2025-03-27
+---
+
+{"name":"hop-content","children":\[{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections","attrs":{"id":"reusable-sections"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1481-c4","parentId":"1481-c3","partialId":1481,"children":\[{"name":"hop-heading","slot":null,"parentId":"1481-c4","index":0,"id":"1481-c5","partialId":1481,"styleRef":1047,"type":"content","domuuid":"850-c5","props":{"content":"Tejedoras Macram\\u00e9"}},{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1481-c7","parentId":"1481-c6","partialId":1481,"children":\[{"name":"hop-image","slot":null,"parentId":"1481-c7","index":0,"id":"1481-c8","partialId":1481,"styleRef":1050,"type":"content","domuuid":"850-c8","props":{"url":"http:\\/\\/agendaculturalc4.com\\/wp-content\\/uploads\\/2025\\/03\\/logo-tejedoras-Elizabeth-Espinosa-Arango-1.png","caption":{"text":""},"imageId":833,"size":""}}\],"styleRef":1049,"type":"content"},{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1481-c9","parentId":"1481-c6","partialId":1481,"children":\[{"name":"hop-heading","slot":null,"parentId":"1481-c9","index":0,"id":"1481-c10","partialId":1481,"styleRef":1052,"type":"content","domuuid":"850-c17","props":{"content":"Representante: Elizabeth Espinosa Arango  
+  
+Actividades: Artesanal, Mujeres  
+  
+Contacto: 3245707125  
+  
+Email: tejedorasmacrame@gmail.com  
+  
+Direcci\\u00f3n: El taller se encuentra ubicado en mi lugar de residencia.  
+  
+Instagram: https:\\/\\/www.instagram.com\\/tejedorasmacrame\\/  
+  
+Facebook: https:\\/\\/www.facebook.com\\/tejedorasmacrame"}}\],"styleRef":1051,"type":"content","domuuid":"850-c14"}\],"slot":null,"parentId":"1481-c4","index":1,"id":"1481-c6","partialId":1481,"styleRef":1048,"type":"content","domuuid":"504-c9"}\],"styleRef":1046,"type":"content","domuuid":"504-c4"}\],"id":"1481-c3","parentId":"1481-c2","partialId":1481,"styleRef":1045,"type":"content","domuuid":"504-c3"}\],"id":"1481-c2","parentId":"1481-c1","partialId":1481,"slots":{"header":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":80,"unit":"%"}}}}},"children":\[{"name":"hop-heading","id":"1481-c13","parentId":"1481-c12","partialId":1481,"styleRef":1055,"type":"content"},{"name":"hop-text","id":"1481-c14","parentId":"1481-c12","partialId":1481,"styleRef":1056,"type":"content"}\],"id":"1481-c12","parentId":"1481-c11","partialId":1481,"styleRef":1054,"type":"content"}\],"id":"1481-c11","parentId":"1481-c2","partialId":1481,"styleRef":1053,"type":"content"}\]},"styleRef":1044,"type":"content","domuuid":"850-c2"},{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections 2","attrs":{"id":"reusable-sections-2"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1481-c17","parentId":"1481-c16","partialId":1481,"children":\[{"name":"hop-text","slot":null,"parentId":"1481-c17","index":0,"id":"1481-c18","partialId":1481,"styleRef":1060,"type":"content","domuuid":"1013-c18","props":{"content":"
+
+\[ngg src=\\"galleries\\" ids=\\"43\\" display=\\"basic\_thumbnail\\" thumbnail\_crop=\\"0\\"\]<\\/p>"}}\],"styleRef":1059,"type":"content"}\],"id":"1481-c16","parentId":"1481-c15","partialId":1481,"styleRef":1058,"type":"content"}\],"id":"1481-c15","parentId":"1481-c1","partialId":1481,"styleRef":1057,"type":"content"}\],"id":"1481-c1","partialId":1481,"styleRef":1043,"type":"content"}

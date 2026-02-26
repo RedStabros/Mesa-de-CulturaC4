@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allProfiles = await getCollection('profiles');
+---
+<Layout title="Base de Datos C4">
+  <div class="py-10">
+    <div class="max-w-3xl mx-auto text-center mb-12">
+      <div class="flex flex-col items-center justify-center mb-6">
+        <img src="/wp-content/uploads/2025/03/Final-colores-web.png" alt="Logo Mesa de Cultura C4" class="w-24 md:w-32 mb-4 drop-shadow-md hover:scale-105 transition-transform duration-300" />
+        <h1 class="text-4xl font-extrabold text-primary dark:text-blue-400">Base de Datos C4</h1>
+      </div>
+      <p class="text-gray-800 dark:text-gray-200 text-lg">
+        Si usted como artista o su grupo cultural pertenece a la Comuna 4 de Medellín y desea agregar o modificar la información de esta base de datos, por favor lo invitamos a hacerlo en el siguiente link:
+      </p>
+      <div class="mt-6">
+        <a 
+          href="https://forms.gle/d8bNgdP4A4wy5GnH7" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-opacity-90 shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+        >
+          Formulario Agregar o modificar información
+        </a>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {allProfiles.map(profile => (
+        <article class="bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300 transform hover:-translate-y-1 group">
+           <a href={`/profiles/${profile.slug}`} class="block h-full flex flex-col">
+             <div class="h-40 bg-gray-100 dark:bg-gray-900 overflow-hidden relative">
+               {profile.data.coverImage ? (
+                 <img src={profile.data.coverImage} alt={profile.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+               ) : (
+                 <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-700 dark:to-gray-800 group-hover:from-secondary/20 group-hover:to-secondary/30 transition-colors flex items-center justify-center">
+                    <div class="w-16 h-16 rounded-full bg-white/60 dark:bg-black/40 shadow-inner flex items-center justify-center text-primary dark:text-blue-300 font-bold text-xl uppercase border-2 border-white dark:border-gray-600">
+                      {profile.data.title.substring(0,2)}
+                    </div>
+                 </div>
+               )}
+             </div>
+             <div class="p-5 flex-grow flex items-center justify-center text-center">
+               <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100 group-hover:text-primary dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+                 {profile.data.title}
+               </h3>
+             </div>
+           </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</Layout>

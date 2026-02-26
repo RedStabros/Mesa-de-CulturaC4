@@ -1,0 +1,19 @@
+---
+date: 2025-03-27
+---
+
+{"name":"hop-content","children":\[{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections","attrs":{"id":"reusable-sections"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1044-c4","parentId":"1044-c3","partialId":1044,"children":\[{"name":"hop-heading","slot":null,"parentId":"1044-c4","index":0,"id":"1044-c5","partialId":1044,"styleRef":525,"type":"content","domuuid":"850-c5","props":{"content":"Red Cultural Juvenil Comunidad Underground"}},{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1044-c7","parentId":"1044-c6","partialId":1044,"children":\[{"name":"hop-image","slot":null,"parentId":"1044-c7","index":0,"id":"1044-c8","partialId":1044,"styleRef":528,"type":"content","domuuid":"850-c8","props":{"url":"http:\\/\\/agendaculturalc4.com\\/wp-content\\/uploads\\/2025\\/03\\/Logo-perfil-Borrando-Estigmas.png","caption":{"text":""},"imageId":766,"size":""}}\],"styleRef":527,"type":"content"},{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1044-c9","parentId":"1044-c6","partialId":1044,"children":\[{"name":"hop-heading","slot":null,"parentId":"1044-c9","index":0,"id":"1044-c10","partialId":1044,"styleRef":530,"type":"content","domuuid":"850-c17","props":{"content":"Representante: Sebasti\\u00e1n Carvajal Cartagena  
+  
+Actividades: Danza, Recreacion, Ilustracion, Clown o Circo, Juventud, Literatura  
+  
+Contacto: 3013103304  
+  
+Email: redcomunidadunderground@gmail.com  
+  
+Direcci\\u00f3n: Parque de los Deseos  
+  
+Facebook: https:\\/\\/www.facebook.com\\/Ciudadfrikii\\/  
+  
+Instagram: https:\\/\\/www.instagram.com\\/ciudadfriki\_\\/"}}\],"styleRef":529,"type":"content","domuuid":"850-c14"}\],"slot":null,"parentId":"1044-c4","index":1,"id":"1044-c6","partialId":1044,"styleRef":526,"type":"content","domuuid":"504-c9"}\],"styleRef":524,"type":"content","domuuid":"504-c4"}\],"id":"1044-c3","parentId":"1044-c2","partialId":1044,"styleRef":523,"type":"content","domuuid":"504-c3"}\],"id":"1044-c2","parentId":"1044-c1","partialId":1044,"slots":{"header":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":80,"unit":"%"}}}}},"children":\[{"name":"hop-heading","id":"1044-c13","parentId":"1044-c12","partialId":1044,"styleRef":533,"type":"content"},{"name":"hop-text","id":"1044-c14","parentId":"1044-c12","partialId":1044,"styleRef":534,"type":"content"}\],"id":"1044-c12","parentId":"1044-c11","partialId":1044,"styleRef":532,"type":"content"}\],"id":"1044-c11","parentId":"1044-c2","partialId":1044,"styleRef":531,"type":"content"}\]},"styleRef":522,"type":"content","domuuid":"850-c2"},{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections 2","attrs":{"id":"reusable-sections-2"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1044-c17","parentId":"1044-c16","partialId":1044,"children":\[{"name":"hop-text","slot":null,"parentId":"1044-c17","index":0,"id":"1044-c18","partialId":1044,"styleRef":538,"type":"content","domuuid":"1013-c18","props":{"content":"
+
+\[ngg src=\\"galleries\\" ids=\\"14\\" display=\\"basic\_thumbnail\\" thumbnail\_crop=\\"0\\"\]<\\/p>"}}\],"styleRef":537,"type":"content"}\],"id":"1044-c16","parentId":"1044-c15","partialId":1044,"styleRef":536,"type":"content"}\],"id":"1044-c15","parentId":"1044-c1","partialId":1044,"styleRef":535,"type":"content"}\],"id":"1044-c1","partialId":1044,"styleRef":521,"type":"content"}

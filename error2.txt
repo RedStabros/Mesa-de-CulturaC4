@@ -1,0 +1,15 @@
+[2m22:12:42[22m [34m[content][39m Syncing content
+[2m22:12:42[22m [34m[content][39m Synced content
+[2m22:12:42[22m [34m[types][39m Generated [2m825ms[22m
+[2m22:12:42[22m [34m[build][39m output: [34m"static"[39m
+[2m22:12:42[22m [34m[build][39m mode: [34m"static"[39m
+[2m22:12:42[22m [34m[build][39m directory: [34mD:\APP_development\Mesa_de_CulturaC4\dist\[39m
+[2m22:12:42[22m [34m[build][39m Collecting build info...
+[2m22:12:42[22m [34m[build][39m [32m✓ Completed in 880ms.[39m
+[2m22:12:42[22m [34m[build][39m Building static entrypoints...
+[31m[1m22:12:43[22m [ERROR] [vite][39m [31m✗[39m Build failed in 979ms
+Could not resolve "./mesa-de-cultura-c4.md" from "src/pages/mesa-de-cultura.astro"
+file: D:/APP_development/Mesa_de_CulturaC4/src/pages/mesa-de-cultura.astro
+  [1mStack trace:[22m
+[2m    at getRollupError (file:///D:/APP_development/Mesa_de_CulturaC4/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at ModuleLoader.handleInvalidResolvedId (file:///D:/APP_development/Mesa_de_CulturaC4/node_modules/rollup/dist/es/shared/node-entry.js:21710:24)[22m

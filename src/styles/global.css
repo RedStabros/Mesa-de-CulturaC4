@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #004e75;
+  --color-secondary: #e6a817;
+  --color-background-light: #f5f2e9;
+  /* Arena suave / Sand */
+  --color-background-dark: #0a192f;
+  /* Azul oscuro / Navy */
+  --color-surface-dark: #112240;
+  /* Azul profundo para tarjetas */
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}

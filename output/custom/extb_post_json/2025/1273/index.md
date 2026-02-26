@@ -1,0 +1,19 @@
+---
+date: 2025-03-27
+---
+
+{"name":"hop-content","children":\[{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections","attrs":{"id":"reusable-sections"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1266-c4","parentId":"1266-c3","partialId":1266,"children":\[{"name":"hop-heading","slot":null,"parentId":"1266-c4","index":0,"id":"1266-c5","partialId":1266,"styleRef":795,"type":"content","domuuid":"850-c5","props":{"content":"Abracadabra academia de danza"}},{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1266-c7","parentId":"1266-c6","partialId":1266,"children":\[{"name":"hop-image","slot":null,"parentId":"1266-c7","index":0,"id":"1266-c8","partialId":1266,"styleRef":798,"type":"content","domuuid":"850-c8","props":{"url":"http:\\/\\/agendaculturalc4.com\\/wp-content\\/uploads\\/2025\\/03\\/WhatsApp-Image-2022-11-06-at-1.30.09-PM-Borrando-Estigmas.jpeg","caption":{"text":""},"imageId":807,"size":""}}\],"styleRef":797,"type":"content"},{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1266-c9","parentId":"1266-c6","partialId":1266,"children":\[{"name":"hop-heading","slot":null,"parentId":"1266-c9","index":0,"id":"1266-c10","partialId":1266,"styleRef":800,"type":"content","domuuid":"850-c17","props":{"content":"Representante: Zuleth Andrea P\\u00e9rez Londo\\u00f1o  
+  
+Actividades: Danza, Recreacion, Juventud, Mujeres, Adulto Mayor, Infancia  
+  
+Contacto: 3166208414  
+  
+Email: academiaabc321@gmail.com  
+  
+Direcci\\u00f3n: calle 78c 54-17  
+  
+Facebook: https:\\/\\/www.facebook.com\\/profile.php?id=100063564647389  
+  
+Instagram: https:\\/\\/instagram.com\\/abracadabramedellin?igshid=NTc4MTIwNjQ2YQ=="}}\],"styleRef":799,"type":"content","domuuid":"850-c14"}\],"slot":null,"parentId":"1266-c4","index":1,"id":"1266-c6","partialId":1266,"styleRef":796,"type":"content","domuuid":"504-c9"}\],"styleRef":794,"type":"content","domuuid":"504-c4"}\],"id":"1266-c3","parentId":"1266-c2","partialId":1266,"styleRef":793,"type":"content","domuuid":"504-c3"}\],"id":"1266-c2","parentId":"1266-c1","partialId":1266,"slots":{"header":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":80,"unit":"%"}}}}},"children":\[{"name":"hop-heading","id":"1266-c13","parentId":"1266-c12","partialId":1266,"styleRef":803,"type":"content"},{"name":"hop-text","id":"1266-c14","parentId":"1266-c12","partialId":1266,"styleRef":804,"type":"content"}\],"id":"1266-c12","parentId":"1266-c11","partialId":1266,"styleRef":802,"type":"content"}\],"id":"1266-c11","parentId":"1266-c2","partialId":1266,"styleRef":801,"type":"content"}\]},"styleRef":792,"type":"content","domuuid":"850-c2"},{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections 2","attrs":{"id":"reusable-sections-2"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1266-c17","parentId":"1266-c16","partialId":1266,"children":\[{"name":"hop-text","slot":null,"parentId":"1266-c17","index":0,"id":"1266-c18","partialId":1266,"styleRef":808,"type":"content","domuuid":"1013-c18","props":{"content":"
+
+\[ngg src=\\"galleries\\" ids=\\"29\\" display=\\"basic\_thumbnail\\" thumbnail\_crop=\\"0\\"\]<\\/p>"}}\],"styleRef":807,"type":"content"}\],"id":"1266-c16","parentId":"1266-c15","partialId":1266,"styleRef":806,"type":"content"}\],"id":"1266-c15","parentId":"1266-c1","partialId":1266,"styleRef":805,"type":"content"}\],"id":"1266-c1","partialId":1266,"styleRef":791,"type":"content"}

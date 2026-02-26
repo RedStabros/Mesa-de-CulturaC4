@@ -1,0 +1,19 @@
+---
+date: 2025-03-27
+---
+
+{"name":"hop-content","children":\[{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections","attrs":{"id":"reusable-sections"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1371-c4","parentId":"1371-c3","partialId":1371,"children":\[{"name":"hop-heading","slot":null,"parentId":"1371-c4","index":0,"id":"1371-c5","partialId":1371,"styleRef":903,"type":"content","domuuid":"850-c5","props":{"content":"Bibi Suarez"}},{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1371-c7","parentId":"1371-c6","partialId":1371,"children":\[{"name":"hop-image","slot":null,"parentId":"1371-c7","index":0,"id":"1371-c8","partialId":1371,"styleRef":906,"type":"content","domuuid":"850-c8","props":{"url":"http:\\/\\/agendaculturalc4.com\\/wp-content\\/uploads\\/2025\\/03\\/WhatsApp-Image-2023-05-22-at-7.15.49-PM-Fiesta-Friki-Comunidad-Underground.jpeg","caption":{"text":""},"imageId":818,"size":""}}\],"styleRef":905,"type":"content"},{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":50,"unit":"%"}}}}},"id":"1371-c9","parentId":"1371-c6","partialId":1371,"children":\[{"name":"hop-heading","slot":null,"parentId":"1371-c9","index":0,"id":"1371-c10","partialId":1371,"styleRef":908,"type":"content","domuuid":"850-c17","props":{"content":"Representante: Sandra Bibiana Suarez Bedoya  
+  
+Actividades: Artesanal, Ilustracion, Pintura  
+  
+Contacto: 3116046819  
+  
+Email: bibipater@gmail.com  
+  
+Direcci\\u00f3n: Cra. 46a # 84-18 Campo Vald\\u00e9s  
+  
+Instagram: https:\\/\\/www.instagram.com\\/bibi\_suarez31\\/  
+  
+WhatsApp 3153095857"}}\],"styleRef":907,"type":"content","domuuid":"850-c14"}\],"slot":null,"parentId":"1371-c4","index":1,"id":"1371-c6","partialId":1371,"styleRef":904,"type":"content","domuuid":"504-c9"}\],"styleRef":902,"type":"content","domuuid":"504-c4"}\],"id":"1371-c3","parentId":"1371-c2","partialId":1371,"styleRef":901,"type":"content","domuuid":"504-c3"}\],"id":"1371-c2","parentId":"1371-c1","partialId":1371,"slots":{"header":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":80,"unit":"%"}}}}},"children":\[{"name":"hop-heading","id":"1371-c13","parentId":"1371-c12","partialId":1371,"styleRef":911,"type":"content"},{"name":"hop-text","id":"1371-c14","parentId":"1371-c12","partialId":1371,"styleRef":912,"type":"content"}\],"id":"1371-c12","parentId":"1371-c11","partialId":1371,"styleRef":910,"type":"content"}\],"id":"1371-c11","parentId":"1371-c2","partialId":1371,"styleRef":909,"type":"content"}\]},"styleRef":900,"type":"content","domuuid":"850-c2"},{"name":"hop-section","props":{"anchor":false,"name":"Reusable Sections 2","attrs":{"id":"reusable-sections-2"}},"children":\[{"name":"hop-row","children":\[{"name":"hop-column","style":{"descendants":{"outer":{"columnWidth":{"type":"custom","custom":{"value":100,"unit":"%"}}}}},"id":"1371-c17","parentId":"1371-c16","partialId":1371,"children":\[{"name":"hop-text","slot":null,"parentId":"1371-c17","index":0,"id":"1371-c18","partialId":1371,"styleRef":916,"type":"content","domuuid":"1013-c18","props":{"content":"
+
+\[ngg src=\\"galleries\\" ids=\\"35\\" display=\\"basic\_thumbnail\\" thumbnail\_crop=\\"0\\"\]<\\/p>"}}\],"styleRef":915,"type":"content"}\],"id":"1371-c16","parentId":"1371-c15","partialId":1371,"styleRef":914,"type":"content"}\],"id":"1371-c15","parentId":"1371-c1","partialId":1371,"styleRef":913,"type":"content"}\],"id":"1371-c1","partialId":1371,"styleRef":899,"type":"content"}
