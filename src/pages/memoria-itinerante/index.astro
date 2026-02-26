@@ -59,19 +59,19 @@ import Layout from '../../layouts/Layout.astro';
                         Voces y memorias de una comuna
                     </h2>
                     
-                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4 font-serif">
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                         El componente de itinerancia de la exposición <strong>“Voces y memorias de una comuna”</strong> emerge como uno de los proyectos más fascinantes desarrollados en la Comuna 4 durante la última década, focalizado en la recuperación de la memoria a través de la actividad comunitaria. Este esfuerzo de divulgación selecciona las 20 mejores investigaciones de entre las 79 propuestas, resultado de los tres encuentros de gestores de investigación, memoria y patrimonio en los que se caracterizaron más de 15 entidades que trabajan con este tema en el territorio. Este riguroso proceso incluye una fase curatorial, museística y de estilo llevada a cabo por la Casa Museo Pedro Nel Gómez, garantizando la calidad de las investigaciones y respetando la identidad y la narrativa del territorio según sus habitantes.
                     </p>
-                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 font-serif mb-4">
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                         Estas siete colecciones, dispuestas estratégicamente en lugares de alto impacto y circulación, destacan la identidad de los habitantes del territorio, evocando recuerdos imborrables en la memoria de los adultos mayores. Generan un impacto significativo y despiertan la curiosidad en las nuevas generaciones, convirtiéndose en herramientas pedagógicas vinculadas al pensum educativo y destacadas por los docentes de las instituciones educativas donde se han instalado las colecciones.
                     </p>
-                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 font-serif mb-4">
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                         Es relevante subrayar que, en una segunda instancia, las colecciones fueron entregadas a entidades u organizaciones territoriales que asumieron la responsabilidad de su exposición y circulación. Esto permitió impactar más de 30 espacios, llevando las colecciones a eventos y procesos locales, comunales y barriales, resaltando las historias de personas, lugares, procesos y eventos que han marcado la Comuna 4 en sus 105 años de historia.
                     </p>
-                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 font-serif mb-4">
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                         Otro aspecto positivo es el reconocimiento obtenido por la seriedad de las investigaciones y el trabajo de los colectivos vinculados a temas de Memoria y Patrimonio de la Comuna 4 Aranjuez. Desde los ediles y edilesas de la Junta Administradora Local se aplaude y felicita por las exposiciones en parques públicos y en ámbitos académicos. La percepción positiva de los rectores de las instituciones educativas motiva la solicitud de considerarlos en futuros proyectos de memoria y patrimonio, así como en su integración a los procesos culturales, reflejo del interés de las comunidades por su entorno e identidad.
                     </p>
-                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 font-serif mb-4">
+                    <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-4">
                         Este proyecto ha sido posible gracias a los recursos del Programa de Planeación del Desarrollo Local y Presupuesto Participativo Comuna 4 Aranjuez (PDL y PP) a través de la Secretaría de Cultura Ciudadana de la Alcaldía de Medellín en las vigencias 2020-2021, 2021-2022 y 2022-2023.
                     </p>
                 </div>
@@ -161,16 +161,6 @@ import Layout from '../../layouts/Layout.astro';
                 <span class="relative z-10 px-6 bg-background-light dark:bg-background-dark font-bold">Galería Fotográfica Itinerante</span>
             </h3>
 
-            <!-- Passed into JS -->
-            <script is:inline>
-                window.itineranteGalleryImages = [
-                    'Aranjuez-para-el-mundo.jpg', 'DSC_0076_view.JPG', 'DSC_0182_view.JPG', 'DSC_0196_view.JPG',
-                    'DSC_0619_view.JPG', 'DSC_0668_view.JPG', 'DSC_0923_view.JPG', 'DSC_1000_view.JPG',
-                    'IMG_20220719_133449.jpg', 'IMG_20220721_105024.jpg', 'IMG_20220722_121633.jpg', 'ItineranciaJaviera.jpg',
-                    'Puerta-Rosa.jpg', 'itineraciaColegio.jpg', '1700167845660.jpg', '1700167845875.jpg'
-                ];
-            </script>
-
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 px-4 md:px-0">
                 {[
                     'Aranjuez-para-el-mundo.jpg',
@@ -190,23 +180,21 @@ import Layout from '../../layouts/Layout.astro';
                     '1700167845660.jpg',
                     '1700167845875.jpg'
                 ].map((img, index) => (
-                    <button 
-                        class="group relative aspect-square overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 text-left outline-none focus:ring-4 focus:ring-primary/50"
-                        onclick={`openGalleryModal(${index}, 'Registro Fotográfico')`}
-                        aria-label="Ampliar imagen"
-                    >
-                        <img 
-                            src={`/wp-content/gallery/memoria-itinerante/${img}`} 
-                            alt={`Registro de Memoria Itinerante`}
-                            class="absolute inset-0 w-full h-full object-cover filter brightness-90 sepia-[0.2] group-hover:sepia-0 group-hover:brightness-110 group-hover:scale-110 transition-all duration-500"
-                            loading="lazy"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <span class="text-white text-xs font-semibold shadow-sm flex items-center gap-1">
-                                <span class="material-icons text-[14px]">fullscreen</span> Ampliar
-                            </span>
-                        </div>
-                    </button>
+                    <div class="group relative aspect-square overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+                        <a data-fslightbox="gallery-itinerante" href={`/wp-content/gallery/memoria-itinerante/${img}`} class="w-full h-full block">
+                            <img 
+                                src={`/wp-content/gallery/memoria-itinerante/${img}`} 
+                                alt={`Registro de Memoria Itinerante`}
+                                class="absolute inset-0 w-full h-full object-cover filter brightness-90 sepia-[0.2] group-hover:sepia-0 group-hover:brightness-110 group-hover:scale-110 transition-all duration-500"
+                                loading="lazy"
+                            />
+                            <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 dark:group-hover:bg-black/40 transition-colors duration-300 pointer-events-none flex items-end p-4">
+                                <span class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs font-semibold shadow-sm flex items-center gap-1">
+                                    <span class="material-icons text-[14px]">fullscreen</span> Ampliar
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 ))}
             </div>
             <div class="mt-8 text-center text-gray-500 dark:text-gray-400 italic text-sm">
@@ -241,127 +229,4 @@ import Layout from '../../layouts/Layout.astro';
         </section>
     </div>
 
-    <!-- Gallery Lightbox Modal -->
-    <dialog id="gallery-lightbox" class="backdrop:bg-black/95 backdrop:backdrop-blur-md bg-transparent w-full h-[100dvh] max-w-none p-0 md:p-12 m-0 max-h-none rounded-none shadow-none outline-none overflow-hidden" onclick="if(event.target === this) closeGalleryModal()">
-         <div class="relative w-full h-full flex flex-col items-center justify-center animate-zoom-in">
-             <button onclick="closeGalleryModal()" class="fixed top-4 right-4 md:absolute md:-top-12 md:-right-12 z-50 w-12 h-12 md:w-10 md:h-10 bg-black/50 md:bg-white/10 hover:bg-black/80 md:hover:bg-white/30 rounded-full flex items-center justify-center text-white backdrop-blur-sm transition-colors border border-white/20">
-                 <span class="material-icons">close</span>
-             </button>
-             
-             <!-- Navigation Arrows -->
-             <button onclick="navigateGallery(-1, event)" class="absolute left-2 md:-left-12 top-1/2 -translate-y-1/2 z-50 w-12 h-12 bg-black/50 hover:bg-black/80 rounded-full flex items-center justify-center text-white backdrop-blur-md transition-all border border-white/10">
-                 <span class="material-icons text-2xl">chevron_left</span>
-             </button>
-             <button onclick="navigateGallery(1, event)" class="absolute right-2 md:-right-12 top-1/2 -translate-y-1/2 z-50 w-12 h-12 bg-black/50 hover:bg-black/80 rounded-full flex items-center justify-center text-white backdrop-blur-md transition-all border border-white/10">
-                 <span class="material-icons text-2xl">chevron_right</span>
-             </button>
-
-             <img id="lightbox-image" src="" alt="Vista ampliada" class="max-w-full max-h-[85vh] object-contain rounded-sm shadow-2xl border border-white/10 transition-opacity duration-300" />
-             <p id="lightbox-caption" class="text-white/80 mt-4 font-body text-sm tracking-wide"></p>
-             <p id="lightbox-counter" class="text-white/50 text-xs mt-1 font-mono tracking-widest"></p>
-         </div>
-    </dialog>
-
-    <style>
-         /* Hide scrollbars for the modal */
-         dialog#gallery-lightbox::-webkit-scrollbar {
-             display: none;
-         }
-         dialog#gallery-lightbox {
-             -ms-overflow-style: none; /* IE and Edge */
-             scrollbar-width: none;    /* Firefox */
-             overflow: hidden;
-         }
-         
-         /* Body lock class */
-         :global(body.modal-open) {
-             overflow: hidden;
-         }
-         
-         dialog::backdrop {
-             animation: backdrop-fade 0.3s ease forwards;
-         }
-         dialog[open] .animate-zoom-in {
-             animation: zoom-in-bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-         }
-         @keyframes backdrop-fade {
-             from { opacity: 0; }
-             to { opacity: 1; }
-         }
-         @keyframes zoom-in-bounce {
-             from { opacity: 0; transform: scale(0.9); }
-             to { opacity: 1; transform: scale(1); }
-         }
-    </style>
-
-    <script is:inline>
-         window.currentGalleryIndex = 0;
-         window.currentGalleryCaption = '';
-
-         function updateLightboxUI() {
-             const imgElement = document.getElementById('lightbox-image');
-             const caption = document.getElementById('lightbox-caption');
-             const counter = document.getElementById('lightbox-counter');
-             
-             if(imgElement && window.itineranteGalleryImages) {
-                 // Add fade effect
-                 imgElement.style.opacity = '0.5';
-                 
-                 setTimeout(() => {
-                     imgElement.src = '/wp-content/gallery/memoria-itinerante/' + window.itineranteGalleryImages[window.currentGalleryIndex];
-                     caption.textContent = window.currentGalleryCaption;
-                     counter.textContent = `${window.currentGalleryIndex + 1} / ${window.itineranteGalleryImages.length}`;
-                     imgElement.style.opacity = '1';
-                 }, 150);
-             }
-         }
-
-         function openGalleryModal(index, captionText) {
-             const modal = document.getElementById('gallery-lightbox');
-             if(modal) {
-                 window.currentGalleryIndex = index;
-                 window.currentGalleryCaption = captionText || 'Registro Fotográfico';
-                 updateLightboxUI();
-                 document.body.classList.add('modal-open');
-                 modal.showModal();
-             }
-         }
-
-         function closeGalleryModal() {
-             const modal = document.getElementById('gallery-lightbox');
-             if(modal) {
-                 document.body.classList.remove('modal-open');
-                 modal.close();
-             }
-         }
-
-         function navigateGallery(direction, event) {
-             if(event) event.stopPropagation(); // Prevent modal background click
-             
-             if(window.itineranteGalleryImages) {
-                 window.currentGalleryIndex += direction;
-                 
-                 // Loop around array boundaries
-                 if(window.currentGalleryIndex < 0) {
-                     window.currentGalleryIndex = window.itineranteGalleryImages.length - 1;
-                 } else if (window.currentGalleryIndex >= window.itineranteGalleryImages.length) {
-                     window.currentGalleryIndex = 0;
-                 }
-                 
-                 updateLightboxUI();
-             }
-         }
-
-         // Add keyboard navigation support
-         document.addEventListener('keydown', function(event) {
-             const modal = document.getElementById('gallery-lightbox');
-             if (modal && modal.open) {
-                 if (event.key === 'ArrowLeft') {
-                     navigateGallery(-1);
-                 } else if (event.key === 'ArrowRight') {
-                     navigateGallery(1);
-                 }
-             }
-         });
-    </script>
 </Layout>
