@@ -1,5 +1,6 @@
 ---
 title: "Trova Alzate Avendaño"
+coverImage: "/wp-content/uploads/2025/03/logo-escuela-de-trova-contabilidad-rcu.png"
 date: 2025-03-27
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Josue Gomez"
+coverImage: "/wp-content/uploads/2025/03/WhatsApp-Image-2023-05-16-at-2.12.46-PM-Ciudad-Friki.jpeg"
 date: 2025-03-27
 ---
 

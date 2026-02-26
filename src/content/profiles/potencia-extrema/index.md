@@ -1,5 +1,5 @@
 ---
-coverImage: "/wp-content/uploads/2025/03/Logo-Potencia-extrema-Fiesta-Friki-Comunidad-Underground-1.jpg"
+coverImage: "/wp-content/gallery/potencia-extrema/Potencia-1-Fiesta-Friki-Comunidad-Underground.jpg"
 title: "Potencia Extrema"
 date: 2025-03-27
 ---

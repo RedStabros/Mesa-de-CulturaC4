@@ -1,5 +1,6 @@
 ---
 title: "Cuarta estacion"
+coverImage: "/wp-content/uploads/2025/03/cuarta-estacion.png"
 date: 2025-03-27
 ---
 

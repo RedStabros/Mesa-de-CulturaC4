@@ -1,5 +1,6 @@
 ---
 title: "Maria del Carmen"
+coverImage: "/wp-content/uploads/2025/03/WhatsApp-Image-2023-04-29-at-3.02.51-PM-Borrando-Estigmas.jpeg"
 date: 2025-03-27
 ---
 

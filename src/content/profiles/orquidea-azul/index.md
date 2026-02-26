@@ -1,4 +1,5 @@
 ---
+coverImage: "/wp-content/uploads/2025/03/WhatsApp-Image-2023-05-03-at-12.52.37-PM-2-Borrando-Estigmas.jpeg"
 title: "Orquidea Azul"
 date: 2025-03-27
 ---

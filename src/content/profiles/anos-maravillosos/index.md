@@ -1,5 +1,6 @@
 ---
 title: "Años Maravillosos"
+coverImage: "/wp-content/uploads/2025/03/WhatsApp-Image-2023-05-03-at-5.27.27-PM-Borrando-Estigmas.jpeg"
 date: 2025-03-27
 ---
 

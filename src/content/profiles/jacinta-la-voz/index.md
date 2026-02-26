@@ -1,5 +1,6 @@
 ---
-title: "Jacienta la Voz"
+title: "Jacinta la Voz"
+coverImage: "/wp-content/uploads/2025/03/jacinta.png"
 date: 2025-03-27
 ---
 

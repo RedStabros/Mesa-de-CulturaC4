@@ -1,5 +1,6 @@
 ---
 title: "Gloria Garcia"
+coverImage: "/wp-content/uploads/2025/03/En-estimulo-artistico-Borrando-Estigmas-scaled.jpg"
 date: 2025-03-27
 ---
 

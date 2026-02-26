@@ -1,5 +1,6 @@
 ---
 title: "Fantasia Argentina"
+coverImage: "/wp-content/uploads/2025/03/CORPORACION-FANTASIA-ARGENTINA-2018-TRANSPARENTE-RGB-EN-BLANCO.png"
 date: 2025-03-26
 ---
 

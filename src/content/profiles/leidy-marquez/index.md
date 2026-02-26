@@ -1,5 +1,6 @@
 ---
 title: "Leidy Marquez"
+coverImage: "/wp-content/uploads/2025/03/WhatsApp-Image-2023-05-16-at-6.43.22-PM-Ciudad-Friki.jpeg"
 date: 2025-03-27
 ---
 

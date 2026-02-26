@@ -1,5 +1,6 @@
 ---
 title: "Abracadabra Danza"
+coverImage: "/wp-content/uploads/2025/03/WhatsApp-Image-2022-11-06-at-1.30.09-PM-Borrando-Estigmas.jpeg"
 date: 2025-03-27
 ---
 
