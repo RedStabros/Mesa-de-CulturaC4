@@ -5,11 +5,14 @@ import { getCollection } from 'astro:content';
 const timelineItems = await getCollection('timeline');
 
 const sortedTimeline = timelineItems.sort((a, b) => {
-    if (a.data.title.toLowerCase().includes('antes')) return -1;
-    if (b.data.title.toLowerCase().includes('antes')) return 1;
     if (a.data.title.toLowerCase().includes('actualidad')) return 1;
     if (b.data.title.toLowerCase().includes('actualidad')) return -1;
-    return a.data.title.localeCompare(b.data.title);
+    if (a.data.title.toLowerCase().includes('tiempos')) return -1;
+    if (b.data.title.toLowerCase().includes('tiempos')) return 1;
+    
+    const timeA = a.data.date ? new Date(a.data.date).getTime() : 0;
+    const timeB = b.data.date ? new Date(b.data.date).getTime() : 0;
+    return timeA - timeB;
 });
 ---
 
@@ -30,9 +33,10 @@ const sortedTimeline = timelineItems.sort((a, b) => {
                 <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/20 rounded-full"></div>
                 
                 <div class="space-y-12">
-                {sortedTimeline.map((item, index) => {
+                {sortedTimeline.map(async (item, index) => {
+                    const { Content } = await item.render();
                     const isEven = index % 2 === 0;
-                    const imageSrc = item.data.coverImage ? `/wp-content/uploads/2025/03/${item.data.coverImage}` : "https://lh3.googleusercontent.com/aida-public/AB6AXuBx6NnekSpd35c5NRYotxeucN3hamZkugoDxwDFyerS7samKW5SH4uahB61c8NgMm8aNuI_7dGPpSJxPUtmtUl3sh7S57v70wPWLqm79c7cGrRW3ASu9LDP_cepG8teNlP629N3j8hwll3eC8tynf-KauUBPS4RdNtrbHvcaheFD0-Je3OJnoh8nmBRrwxqqrbuae1VXALTh2blHZziA7EkXrbNk3W0HNgABVq8cQAEMRMNVDLddua1zExrE0U7MPYJA9fKT1tA1Vmp";
+                    const imageSrc = item.data.coverImage ? item.data.coverImage : "https://lh3.googleusercontent.com/aida-public/AB6AXuBx6NnekSpd35c5NRYotxeucN3hamZkugoDxwDFyerS7samKW5SH4uahB61c8NgMm8aNuI_7dGPpSJxPUtmtUl3sh7S57v70wPWLqm79c7cGrRW3ASu9LDP_cepG8teNlP629N3j8hwll3eC8tynf-KauUBPS4RdNtrbHvcaheFD0-Je3OJnoh8nmBRrwxqqrbuae1VXALTh2blHZziA7EkXrbNk3W0HNgABVq8cQAEMRMNVDLddua1zExrE0U7MPYJA9fKT1tA1Vmp";
 
                     return (
                         <div class={`relative flex flex-col md:flex-row items-center ${isEven ? 'md:justify-start' : 'md:justify-end'}`}>
@@ -47,9 +51,9 @@ const sortedTimeline = timelineItems.sort((a, b) => {
                                 <div class="bg-white dark:bg-surface-dark rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700 group">
                                     <div class="flex flex-col sm:flex-row h-full">
                                         <!-- Image Section -->
-                                        <div class="w-full sm:w-2/5 md:w-1/3 bg-gray-100 relative overflow-hidden flex-shrink-0 min-h-[160px]">
+                                        <div class="w-full sm:w-2/5 md:w-1/3 bg-gray-100 dark:bg-gray-800 relative overflow-hidden flex-shrink-0 min-h-[160px] flex items-center justify-center p-4">
                                             {item.data.coverImage && (
-                                                <img src={imageSrc} alt={item.data.title} class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                                <img src={imageSrc} alt={item.data.title} class="w-full h-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-500"/>
                                             )}
                                         </div>
                                         
@@ -59,11 +63,75 @@ const sortedTimeline = timelineItems.sort((a, b) => {
                                                 Hito Histórico
                                             </span>
                                             <h3 class="font-display font-bold text-gray-800 dark:text-white text-2xl mb-3">{item.data.title}</h3>
-                                            <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed italic border-l-2 border-primary/30 dark:border-secondary/50 pl-3">
-                                                [Espacio reservado para el texto histórico de esta década...]
-                                            </p>
+                                            <div class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed italic border-l-2 border-primary/30 dark:border-secondary/50 pl-3 prose prose-sm dark:prose-invert line-clamp-3 mb-4">
+                                                <Content />
+                                            </div>
+                                            <button 
+                                                class="self-start text-sm font-bold text-primary dark:text-blue-400 hover:text-secondary dark:hover:text-secondary transition-colors inline-flex items-center gap-1 group/btn"
+                                                onclick={`document.getElementById('modal-${item.id}').showModal()`}
+                                            >
+                                                Leer historia completa 
+                                                <span class="material-icons text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                                            </button>
                                         </div>
                                     </div>
+
+                                    <!-- Native Dialog HTML Modal -->
+                                    <dialog id={`modal-${item.id}`} class="backdrop:bg-black/60 backdrop:backdrop-blur-sm bg-transparent w-full max-w-4xl p-4 m-auto rounded-none shadow-none outline-none">
+                                        <div class="bg-white dark:bg-surface-dark rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row relative w-full border border-gray-200 dark:border-gray-700">
+                                            <!-- Close button -->
+                                            <button 
+                                                onclick={`document.getElementById('modal-${item.id}').close()`}
+                                                class="absolute top-4 right-4 z-20 w-10 h-10 bg-black/10 hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20 rounded-full flex items-center justify-center text-gray-800 dark:text-white transition-colors"
+                                            >
+                                                <span class="material-icons">close</span>
+                                            </button>
+
+                                            <!-- Image Side -->
+                                            <div class="w-full md:w-2/5 bg-gray-100 dark:bg-gray-800 h-64 md:h-auto overflow-hidden relative flex flex-col items-center justify-center p-6 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-700">
+                                                {item.data.coverImage && (
+                                                    <img src={imageSrc} alt={item.data.title} class="max-w-[80%] max-h-full object-contain drop-shadow-xl"/>
+                                                )}
+                                                <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/20 md:from-black/5 to-transparent pointer-events-none"></div>
+                                            </div>
+
+                                            <!-- Content Side -->
+                                            <div class="w-full md:w-3/5 p-8 md:p-10 max-h-[80vh] overflow-y-auto custom-scrollbar">
+                                                <span class="inline-block px-3 py-1 bg-secondary/10 dark:bg-secondary/20 text-primary dark:text-secondary text-xs font-bold rounded-full mb-4 uppercase tracking-wider">
+                                                    Época: {item.data.title}
+                                                </span>
+                                                <div class="prose prose-lg dark:prose-invert prose-headings:font-display prose-headings:text-primary dark:prose-headings:text-blue-400 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-a:text-secondary max-w-none">
+                                                    <Content />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </dialog>
+                                    <style>
+                                        dialog::backdrop {
+                                            animation: backdrop-fade 0.3s ease forwards;
+                                        }
+                                        dialog[open] {
+                                            animation: dialog-slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                                        }
+                                        @keyframes backdrop-fade {
+                                            from { opacity: 0; }
+                                            to { opacity: 1; }
+                                        }
+                                        @keyframes dialog-slide-up {
+                                            from { opacity: 0; transform: translateY(20px) scale(0.95); }
+                                            to { opacity: 1; transform: translateY(0) scale(1); }
+                                        }
+                                        .custom-scrollbar::-webkit-scrollbar {
+                                            width: 8px;
+                                        }
+                                        .custom-scrollbar::-webkit-scrollbar-track {
+                                            background: transparent;
+                                        }
+                                        .custom-scrollbar::-webkit-scrollbar-thumb {
+                                            background-color: rgba(156, 163, 175, 0.5);
+                                            border-radius: 20px;
+                                        }
+                                    </style>
                                     
                                     <!-- Decorative Pointer Arrow -->
                                     <div class={`hidden md:block absolute top-1/2 transform -translate-y-1/2 w-4 h-4 bg-white dark:bg-surface-dark border-t border-r border-gray-100 dark:border-gray-700 ${isEven ? 'right-0 mr-[34px] rotate-45' : 'left-0 ml-[34px] -rotate-[135deg]'} z-0`}></div>
