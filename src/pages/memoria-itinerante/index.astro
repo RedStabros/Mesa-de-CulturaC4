@@ -51,6 +51,30 @@ import Layout from '../../layouts/Layout.astro';
     </section>
 
     <div class="flex-grow container mx-auto px-4 py-6">
+        <!-- Imagen de Presentación (Miniatura Clickeable) -->
+        <div class="max-w-[280px] md:max-w-[400px] mx-auto mb-12 group perspective-1000">
+            <a data-fslightbox="gallery-itinerante" href="/wp-content/uploads/2025/03/Presentacion.jpg" class="block relative rounded-sm shadow-[2px_4px_16px_rgba(0,0,0,0.2)] overflow-hidden border bg-[#fdf6e3] border-[#d8cdb4] dark:border-gray-700 transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 ease-out cursor-zoom-in">
+                <!-- Tape effect -->
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-16 h-8 bg-white/40 shadow-sm backdrop-blur-sm -rotate-2 z-20"></div>
+                
+                <img 
+                    src="/wp-content/uploads/2025/03/Presentacion.jpg" 
+                    alt="Exposición Voces y Memorias de una Comuna Documento" 
+                    class="w-full h-auto object-cover object-top opacity-95 group-hover:opacity-100 filter sepia-[0.3] contrast-100 group-hover:sepia-0 transition-all duration-500"
+                    loading="eager"
+                />
+                
+                <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center">
+                    <span class="bg-black/80 text-white rounded-full p-3 opacity-0 group-hover:opacity-100 shadow-lg transform scale-50 group-hover:scale-100 transition-all duration-300 flex items-center justify-center backdrop-blur-sm border border-white/20">
+                        <span class="material-icons text-2xl">zoom_in</span>
+                    </span>
+                </div>
+            </a>
+            <p class="text-center text-xs text-gray-500 dark:text-gray-400 mt-4 italic font-serif">
+                Haz clic en el documento para leerlo en pantalla completa.
+            </p>
+        </div>
+
         <article class="bg-[#fdf6e3] dark:bg-gray-800 shadow-2xl rounded-sm p-8 md:p-12 mb-16 relative mx-auto max-w-5xl transform rotate-1 transition-transform hover:rotate-0 duration-500 border-t-4 border-primary">
             <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-secondary to-transparent opacity-50"></div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
@@ -197,8 +221,14 @@ import Layout from '../../layouts/Layout.astro';
                     </div>
                 ))}
             </div>
-            <div class="mt-8 text-center text-gray-500 dark:text-gray-400 italic text-sm">
-                * Muestra representativa de más de 170 fotografías que documentan nuestros recorridos por la Comuna 4.
+            <div class="mt-12 flex flex-col items-center justify-center space-y-4">
+                <p class="text-center text-gray-500 dark:text-gray-400 italic text-sm">
+                    * Muestra representativa de más de 170 fotografías que documentan nuestros recorridos por la Comuna 4.
+                </p>
+                <a href="/memoria-itinerante/galeria-completa" class="inline-flex items-center justify-center px-6 py-2.5 bg-primary/10 text-primary dark:bg-blue-900/30 dark:text-blue-300 font-semibold rounded-full hover:bg-primary hover:text-white dark:hover:bg-blue-600 dark:hover:text-white transition-all duration-300 shadow-sm border border-primary/20 group">
+                    <span class="material-icons mr-2 text-xl group-hover:scale-110 transition-transform">photo_library</span>
+                    Ver galería completa
+                </a>
             </div>
         </section>
 
@@ -210,8 +240,9 @@ import Layout from '../../layouts/Layout.astro';
                     <span class="material-icons text-6xl text-secondary mb-4 relative z-10">auto_stories</span>
                     <h3 class="text-white font-display text-2xl font-bold mb-2 relative z-10">Investigación Completa</h3>
                     <p class="text-blue-200 text-sm mb-6 relative z-10">Los textos oficiales y bitácoras.</p>
-                    <button class="bg-secondary text-primary font-bold py-2 px-6 rounded-full hover:bg-white transition-colors shadow-md relative z-10">
-                        Descargar PDF
+                    <button class="bg-secondary/60 text-primary/80 font-bold py-2 px-6 rounded-full cursor-not-allowed shadow-none relative z-10 flex flex-col items-center justify-center border border-secondary/20" disabled title="Documento en preparación">
+                        <span>Descargar PDF</span>
+                        <span class="text-[10px] uppercase tracking-wider opacity-80 mt-0.5">Próximamente</span>
                     </button>
                 </div>
                 <div class="md:w-2/3 p-8 md:p-12 relative flex flex-col justify-center">
@@ -220,8 +251,8 @@ import Layout from '../../layouts/Layout.astro';
                         La memoria de la Comuna 4 es un tejido vivo que construimos entre todos. Este proyecto ha sido posible gracias a los recursos del Presupuesto Participativo. Si tienes fotografías antiguas o relatos para compartir con el archivo, contáctanos.
                     </p>
                     <div class="flex items-center space-x-4">
-                        <a href="mailto:info@agendaculturalc4.com" class="flex items-center text-primary dark:text-blue-300 font-bold hover:underline">
-                            <span class="material-icons mr-2">mail</span> info@agendaculturalc4.com
+                        <a href="mailto:designmesac4@gmail.com" class="flex items-center text-primary dark:text-blue-300 font-bold hover:text-secondary hover:underline transition-colors">
+                            <span class="material-icons mr-2">mail</span> Escríbenos un correo
                         </a>
                     </div>
                 </div>

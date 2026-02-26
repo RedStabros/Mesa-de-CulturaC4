@@ -1,0 +1,68 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Dynamically read all images from the folder
+let allImages = [];
+try {
+  const galleryPath = path.join(process.cwd(), 'public/wp-content/gallery/memoria-itinerante');
+  if (fs.existsSync(galleryPath)) {
+    // Read files, filter for images, and sort them or randomize them
+    allImages = fs.readdirSync(galleryPath)
+      .filter((file: string) => /\.(jpg|jpeg|png|webp|gif)$/i.test(file))
+      .map((file: string) => `/wp-content/gallery/memoria-itinerante/${file}`);
+  }
+} catch (e) {
+  console.error("Error reading memoria itinerante full gallery: ", e);
+}
+---
+
+<Layout title="Galería Completa - Memoria Itinerante">
+  <div class="max-w-[1400px] mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Hero/Header -->
+    <div class="text-center mb-16 max-w-3xl mx-auto">
+      <a href="/memoria-itinerante" class="inline-flex items-center text-primary/70 hover:text-primary transition-colors font-medium mb-8 group">
+          <span class="material-icons mr-1 group-hover:-translate-x-1 transition-transform">arrow_back</span>
+          Volver a Memoria Itinerante
+      </a>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-gray-900 dark:text-white mb-6">
+        Archivo Fotográfico
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 font-body leading-relaxed">
+        Navega a través de nuestra extensa colección de {allImages.length > 0 ? allImages.length : '170+'} fotografías que documentan el proyecto <strong>Voces y memorias de una comuna</strong> en sus diversos recorridos por el territorio.
+      </p>
+    </div>
+
+    <!-- Masonry Gallery -->
+    {allImages.length === 0 ? (
+        <div class="text-center py-20 bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+            <span class="material-icons text-6xl text-gray-300 dark:text-gray-600 mb-4 block">image_not_supported</span>
+            <h3 class="text-xl font-medium text-gray-600 dark:text-gray-400">No se encontraron fotografías en el directorio.</h3>
+        </div>
+    ) : (
+        <div class="columns-2 sm:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
+            {allImages.map((imgSrc, index) => (
+                <div class="break-inside-avoid relative group rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-800 bg-gray-100 dark:bg-gray-900">
+                    <a data-fslightbox="gallery-full" href={imgSrc} class="block relative w-full h-full cursor-zoom-in">
+                        <img 
+                            src={imgSrc} 
+                            alt={`Registro de Memoria Itinerante ${index + 1}`} 
+                            class="w-full h-auto object-cover opacity-90 group-hover:opacity-100 filter group-hover:brightness-110 group-hover:scale-105 transition-all duration-500 ease-in-out"
+                            loading={index < 10 ? "eager" : "lazy"}
+                            decoding="async"
+                        />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 dark:group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                            <span class="bg-black/80 text-white rounded-full p-3 shadow-lg transform scale-50 group-hover:scale-100 transition-all duration-300 flex items-center justify-center backdrop-blur-sm border border-white/20">
+                                <span class="material-icons text-xl">fullscreen</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            ))}
+        </div>
+    )}
+
+  </div>
+</Layout>
