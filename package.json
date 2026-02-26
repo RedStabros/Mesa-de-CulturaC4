@@ -9,10 +9,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.6",
     "@astrojs/mdx": "^4.3.13",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.17.1",
-    "tailwindcss": "^4.2.1"
+    "fslightbox": "^3.7.5",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19"
