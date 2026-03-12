@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agendacultural-c4.com/sitemap-index.xml
